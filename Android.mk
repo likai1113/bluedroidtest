@@ -28,7 +28,7 @@ LOCAL_C_INCLUDES := . \
 
 LOCAL_MODULE_TAGS := eng
 
-LOCAL_MODULE:= bdt
+LOCAL_MODULE:=yk_bdt
 
 LOCAL_LDLIBS += -lpthread -ldl -llog -lreadline
 LIBS_c += -lreadline
@@ -41,22 +41,22 @@ LOCAL_SHARED_LIBRARIES += libcutils   \
 include $(BUILD_EXECUTABLE)
 
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES:= gpst.c
+#LOCAL_SRC_FILES:= gpst.c
 
-LOCAL_C_INCLUDES :=
+#LOCAL_C_INCLUDES :=
 
-LOCAL_MODULE_TAGS := eng
+#LOCAL_MODULE_TAGS := eng
 
-LOCAL_MODULE:= gpst
+#LOCAL_MODULE:= gpst
 
-LOCAL_LDLIBS += -lpthread -ldl -llog -lreadline
+#LOCAL_LDLIBS += -lpthread -ldl -llog -lreadline
 
-LOCAL_SHARED_LIBRARIES += libcutils   \
-                          libutils    
+#LOCAL_SHARED_LIBRARIES += libcutils   \
+#                          libutils    
 
-include $(BUILD_EXECUTABLE)
+#include $(BUILD_EXECUTABLE)
 
 
 #include $(CLEAR_VARS)
